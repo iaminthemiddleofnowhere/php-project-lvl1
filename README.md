@@ -1,2 +1,3 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/iaminthemiddleofnowhere/php-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/iaminthemiddleofnowhere/php-project-lvl1/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/89c66c2f835381aac801/maintainability)](https://codeclimate.com/github/iaminthemiddleofnowhere/php-project-lvl1/maintainability)
