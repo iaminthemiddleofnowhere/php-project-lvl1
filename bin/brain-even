@@ -9,8 +9,7 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use function Brain\Games\Cli\hello;
-
+use function Brain\Games\Even\game;
 
 echo("Welcome to the Brain Games!");
-hello();
+game();
