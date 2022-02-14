@@ -5,12 +5,15 @@ namespace Brain\Games\Even;
 use function cli\line;
 use function Brain\Games\Engine\checkAnswer;
 
-function game($name)
+function game($name, $rounds = 3)
 {
-    $number = rand(1, 100);
-    $isEven = $number % 2 === 0;
-    $rightAnswer = $isEven ? 'yes' : 'no';
+    line('Answer "yes" if the number is even, otherwise answer "no".');
+    for ($i = 0; $i < $rounds; $i++) {
+        $number = rand(1, 100);
+        $isEven = $number % 2 === 0;
+        $rightAnswer = $isEven ? 'yes' : 'no';
 
-    line("Question: {$number}");
-    checkAnswer($rightAnswer, $name);
+        line("Question: %s", $number);
+        checkAnswer($rightAnswer, $name);
+    }
 }
