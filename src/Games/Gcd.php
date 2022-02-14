@@ -5,7 +5,7 @@ namespace Brain\Games\Gcd;
 use function cli\line;
 use function Brain\Games\Engine\checkAnswer;
 
-function game($name, $rounds = 3)
+function game(string $name, int $rounds = 3)
 {
     line("Find the greatest common divisor of given numbers.");
     for ($i = 0; $i < $rounds; $i++) {
@@ -18,13 +18,13 @@ function game($name, $rounds = 3)
     }
 }
 
-function getNod($firstNumber, $secondNumber)
+function getNod(int $firstNumber, int $secondNumber)
 {
     $intersect = array_intersect(getDenoms($firstNumber), getDenoms($secondNumber));
     return end($intersect);
 }
 
-function getDenoms($num, $denoms = [])
+function getDenoms(int $num, array $denoms = [])
 {
     $limit = $num / 2;
     for ($i = 1; $i <= $limit; $i++) {

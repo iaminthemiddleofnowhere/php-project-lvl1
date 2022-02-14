@@ -5,7 +5,7 @@ namespace Brain\Games\Even;
 use function cli\line;
 use function Brain\Games\Engine\checkAnswer;
 
-function game($name, $rounds = 3)
+function game(string $name, int $rounds = 3)
 {
     line('Answer "yes" if the number is even, otherwise answer "no".');
     for ($i = 0; $i < $rounds; $i++) {

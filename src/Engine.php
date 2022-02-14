@@ -5,7 +5,7 @@ namespace Brain\Games\Engine;
 use function cli\prompt;
 use function cli\line;
 
-function startGame($game)
+function startGame(string $game)
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
@@ -14,7 +14,7 @@ function startGame($game)
     line("Congratulations, %s!", $name);
 }
 
-function checkAnswer($rightAnswer, $name)
+function checkAnswer(mixed $rightAnswer, string $name)
 {
     $userAnswer = prompt("Your answer");
     if ($rightAnswer != $userAnswer) {

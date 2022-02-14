@@ -5,7 +5,7 @@ namespace Brain\Games\Prime;
 use function cli\line;
 use function Brain\Games\Engine\checkAnswer;
 
-function game($name, $rounds = 3)
+function game(string $name, int $rounds = 3)
 {
     line('Answer "yes" if given number is prime. Otherwise answer "no".');
     for ($i = 0; $i < $rounds; $i++) {
@@ -17,7 +17,7 @@ function game($name, $rounds = 3)
     }
 }
 
-function isPrime($num)
+function isPrime(int $num)
 {
     $limit = $num / 2;
     for ($i = 2; $i <= $limit; $i++) {

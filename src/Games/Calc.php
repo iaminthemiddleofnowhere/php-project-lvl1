@@ -5,7 +5,7 @@ namespace Brain\Games\Calc;
 use function cli\line;
 use function Brain\Games\Engine\checkAnswer;
 
-function game($name, $rounds = 3)
+function game(string $name, int $rounds = 3)
 {
     $actions = [
         '+' => fn($n1, $n2) => $n1 + $n2,

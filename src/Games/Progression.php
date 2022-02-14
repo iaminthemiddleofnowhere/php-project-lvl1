@@ -5,7 +5,7 @@ namespace Brain\Games\Progression;
 use function cli\line;
 use function Brain\Games\Engine\checkAnswer;
 
-function game($name, $rounds = 3)
+function game(string $name, int $rounds = 3)
 {
     line("What number is missing in the progression?");
     for ($i = 0; $i < $rounds; $i++) {
